@@ -1,0 +1,24 @@
+.line {
+    border-bottom: 1px solid #959595;
+}
+.card{
+    box-shadow: inset;
+    flex: 1 1 calc(25% - 20px);
+}
+
+.cards{
+    gap: 20px; 
+}
+@media (max-width: 992px) {
+    .card {
+
+         flex: 1 1 calc(50% - 20px); 
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+
+         flex: 1 1 80% !important; 
+    }
+  }

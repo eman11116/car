@@ -1,0 +1,26 @@
+/* .row>*{
+    padding:0 !important;
+    margin: 0 !important;
+} */
+ *{
+    max-width: 100%;
+ }
+ .test-imonials{
+    background-image: url(../../assets/imges/landing-page/sec-6/bg-sec6.png);
+ }
+.col-md-6{
+    padding-left: 5px !important;
+    box-sizing: border-box !important;
+
+}
+.card{
+    border: 1px solid gray ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+.cards{
+    gap: 2rem !important;
+}
+input{
+ background:   #cedcff;
+ 
+}

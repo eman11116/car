@@ -1,0 +1,52 @@
+
+
+<div class="rental-deals text-center my-5">
+    <div class="input-group mt-5  w-75 mx-auto">
+        <span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
+        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" [(ngModel)]="searchText">
+        <span class="input-group-text bg-primary text-light">search</span>
+    </div>
+    <div class="rental-content  ">
+        <button class="mainBtn my-4">product rental deals</button>
+        <h2 class="my-2">most popular cars rental deals</h2>
+        <div class="container ">
+            <div class="row cards ">
+                <div class=" col-md-3 card text-center py-3" *ngFor="let product of listProduct |search:searchText" >
+                    <img src="../../assets/imges/card/car1.png">
+                    <h6>{{product.car}}</h6>
+                    <div class="star-icon d-flex">
+                        <i class="fa-solid fa-star"></i>
+                        <p> <span>4.8</span> (2.436 reviews)</p>
+                    </div>
+                    <div class="row ">
+                        <div class="col-6 d-flex">
+                            <i class="fa-solid fa-hexagon-nodes-bolt"></i>
+                            <p class="ms-2">{{product.car_model}}</p>
+                        </div>
+                        <div class="col-6 d-flex">
+                            <i class="fa-solid fa-calendar-days"></i>                            
+                            <p class="ms-2">{{product.car_model_year}}</p>
+                        </div>
+                    </div>
+                    <div class="row line">
+                        <div class="col-6 d-flex">
+                            <i class="fa-solid fa-palette"></i>                            
+                            <p class="ms-2">{{product.car_color}}</p>
+                        </div>
+                        <div class="col-6 d-flex">
+                            <i class="fa-regular fa-user"></i>
+                            <p class="ms-2">4 passegers</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between ">
+                        <p>price</p>
+                        <p>{{product.price}}</p>
+                    </div>
+                    <button class="btn btn-primary">rent now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary my-5" [routerLink]="['/all-product'] ">show all vehicles<i class="fa-solid fa-arrow-right ms-2"></i></button>
+
+</div>

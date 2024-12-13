@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+.mainBtn{
+    background-color: #1572d31a;
+    color: #0b5ed7;
+    border: 1px solid #1572d31a;
+    padding: 5px 20px !important;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: capitalize  ;
+}
+h6{
+    text-transform: capitalize  ;
+    font-weight: 500;
+    line-height: 1.2; 
+}
+h4{
+    font-size: 1.5rem;
+
+
+}
+@media (max-width: 992px) {
+    h2{
+        font-size:2rem;
+            }
+}
